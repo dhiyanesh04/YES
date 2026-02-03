@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>For Ash Gurl</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="background-animation"></div>
+
+    <main class="container">
+        <div class="glass-card">
+            <h1 class="question">Do you wanna meet?<br><span class="highlight">Ash Gurl??</span> 🥺👉👈</h1>
+            <div class="gif-container">
+                <img src="https://media1.tenor.com/m/CebT7yqP0G8AAAAC/koala-bear.gif" alt="Cute Koala" class="cute-gif">
+            </div>
+
+            <div class="actions">
+                <button id="yesBtn" class="btn btn-yes">Yes</button>
+                <button id="noBtn" class="btn btn-no">No</button>
+            </div>
+        </div>
+    </main>
+
+    <!-- Success Overlay -->
+    <div id="successOverlay" class="hidden">
+        <div class="success-content">
+            <h1>YAAAAAY! 🎉</h1>
+            <p>See you soon! 🥰</p>
+            <img src="https://media.tenor.com/gUiu1zyxfzYAAAAi/bear-kiss-bear-kisses.gif" alt="Kisses"
+                class="success-gif">
+        </div>
+    </div>
+
+    <!-- Timeout Popup (After 10s) -->
+    <div id="timeoutOverlay" class="hidden">
+        <div class="glass-card timeout-card">
+            <h1 id="timeoutTitle">This is exactly how I feel 😔</h1>
+            <p id="timeoutMessage" class="hidden-text">Just reply in discord ma 🥺</p>
+            <button id="playNowBtn" class="btn btn-yes">Dont Play Again 😜</button>
+        </div>
+    </div>
+
+    <!-- Canvas for Confetti -->
+    <canvas id="confetti-canvas"></canvas>
+
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
